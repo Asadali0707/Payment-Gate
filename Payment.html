@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pay</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<style type="text/css">
+		.contain{
+			width:500px;
+			height: 400px;
+			margin: auto;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			position: absolute;
+			border: 1px solid silver;
+			border-radius:10px;
+		}
+		.pay_dtls{
+			width: 498px;
+			height: 60px;
+			background-color: #ccc;
+			border:1px solid #ccc;
+			border-radius: 10px;
+		}
+		h3{
+			color:black;
+			font-family: sans-serif;
+			margin-left: 25px;
+			margin-top: 17px;
+		}
+		.img{
+			float: right;
+			margin-right:35px;
+			margin-top:-50px;
+		}
+		label{
+			margin-top:30px;
+			margin-left: 25px;
+			font-size: 18px;
+			font-weight: bolder;
+		}
+		input{
+			margin-left: 25px;
+			margin-top: 12px;
+			width: 250px;
+			height:30px;
+			border-radius:5px;
+			font-size:17px;
+		}
+		.cvv{
+			float: right;
+			margin-right: 19px;
+			margin-top: -69px;
+		}
+		.btn{
+			width:100%;
+			height:65px;
+			border:none;
+			background-color: yellow;
+			color: white;
+			font-size:18px;
+			margin-left:0px;
+		}
+		.btn:active{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+<div class="contain">
+	<div class="pay_dtls">
+		<h3>Payment Details</h3>
+		<img class="img" src="http://i76.imgup.net/accepted_c22e0.png"/>
+	</div><br>
+	<form>
+		<label>Card Holder Name</label><br>
+		<input type="text" name="chn" placeholder="Card Holder Name"/><br><br>
+		<label>Card Number</label><br>
+		<input type="number" name="cn" placeholder="Card Number"/>
+		<span><i class="fa fa-credit-card"></i></span><br><br>
+		<label>Expiry Date</label><br>
+		<input type="number" name="ced" placeholder="MM / YY"/>
+		<div class="cvv">
+			<label>CVV Number</label><br>
+			<input type="number" name="cvv_no." placeholder="***" style="width: 175px;">
+		</div>
+		<input type="submit" name="pay_amount" value="Pay" class="btn"/>
+
+	</form>
+</div>
+</body>
+</html>
